@@ -1,0 +1,12 @@
+
+<!-- saved from url=(0043)https://challenge.0ang3el.tk/websocket.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf-8">
+    var socket = io('/', {transports: ['websocket']});
+    socket.on('connect', function() {
+        socket.emit('my event', {data: 'I\'m connected!'});
+    });
+</script>
+</head><body><h3>You need to access /flag at localhost:5000 to solve</h3>
+<p>Good luck!</p>
+</body></html>
